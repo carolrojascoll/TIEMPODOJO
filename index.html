@@ -1,0 +1,66 @@
+<!-- CAROLINA ROJAS COLLANTE -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="header">
+        <h1>TiempoDojo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showAlert('Burbank')">Burbank</a></li>
+                <li><a href="#" onclick="showAlert('Chicago')">Chicago</a></li>
+                <li><a href="#" onclick="showAlert('Dallas')">Dallas</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="location-row">
+            <h2>San Jose</h2>
+            <label for="tempSelect">Mostrar temperatura en </label>
+            <select id="tempSelect" onchange="convertTemperature()">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+        <div class="forecast">
+            <div class="day">
+                <h3>Hoy</h3>
+                <img src="./img/some_rain.png" alt="Lluvia" class="icon">
+                <p>algo de lluvia</p>
+                <p class="temp">24° <span class="unit">C</span> / 18° <span class="unit">C</span></p>
+            </div>
+            <div class="day">
+                <h3>Mañana</h3>
+                <img src="./img/some_sun.png" alt="Sol" class="icon">
+                <p>algo de sol</p>
+                <p class="temp">27° <span class="unit">C</span> / 19° <span class="unit">C</span></p>
+            </div>
+            <div class="day">
+                <h3>Viernes</h3>
+                <img src="./img/some_clouds.png" alt="Nubes" class="icon">
+                <p>algo de nubes</p>
+                <p class="temp">21° <span class="unit">C</span> / 16° <span class="unit">C</span></p>
+            </div>
+            <div class="day">
+                <h3>Sábado</h3>
+                <img src="./img/some_sun.png" alt="Sol" class="icon">
+                <p>algo de sol</p>
+                <p class="temp">26° <span class="unit">C</span> / 21° <span class="unit">C</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <img src="img/cookie.png" alt="Cookie" class="cookie-icon">
+            <p>¡Detente! Es tiempo de cookies. Usamos cookies (lamentablemente no comestibles) para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar nuestro tráfico. <a href="#">Leer más...</a></p>
+            <button onclick="acceptCookies()">Acepto</button>
+        </div>
+    </div>
+    <script src="estilo.js"></script>
+</body>
+</html>
